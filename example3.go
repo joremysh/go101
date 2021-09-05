@@ -17,4 +17,20 @@ func example3() {
 	arr2 := make([]string, 0)       // define an slice with length 0
 	arr2 = append(arr1, arr[4])     // add an element into arr2
 	fmt.Println(len(arr2), arr2[1]) // result: 2 Hulk
+
+	ageOfHeroes := make(map[string]int)    // define a map with string key and int value
+	ageOfHeroes["Dr.Strange"] = 45         // add a pair of key and value to the map
+	fmt.Println(ageOfHeroes["Dr.Strange"]) // result: 45
+
+	age, ok := ageOfHeroes["Dr.Strange"]
+	if ok {
+		fmt.Println("Dr.Strange:", age)
+	} // result: Dr.Strange: 45
+
+	age, ok = ageOfHeroes["Thor"]
+	fmt.Println(age, ok) // result: 0 false
+}
+
+func main() {
+	example3()
 }
