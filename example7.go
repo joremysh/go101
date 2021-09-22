@@ -4,9 +4,9 @@ import (
 	"fmt"
 )
 
-func main() {
-	example7()
-}
+// func main() {
+// 	example7()
+// }
 
 func (p Point) AddX(val float64) {
 	p.X = p.X + val

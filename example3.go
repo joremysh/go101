@@ -31,6 +31,6 @@ func example3() {
 	fmt.Println(age, ok) // result: 0 false
 }
 
-func main() {
-	example3()
-}
+// func main() {
+// 	example3()
+// }
